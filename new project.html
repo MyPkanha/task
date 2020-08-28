@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>new one</title>
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			text-decoration: none;
+			list-style: none;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: sans-serif;
+		}
+
+		nav{
+			background: limegreen;
+			height: 80px; 
+			width: 100%;
+		}
+
+		label.logo {
+			color: white;
+			font-size: 35px;
+			line-height: 80px;
+			padding: 0 100px;
+			font-weight: bold;
+		}
+
+		nav ul {
+			float: right;
+			margin-right: 20px;
+		}
+
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+			margin: 0 5px;
+		}
+
+		nav ul li a {
+			color: black;
+			font-size: 17px;
+			padding: 7px 13px;
+			border-radius: 3px;
+			text-transform: uppercase;
+
+		}
+
+		.k:hover{
+			background-color: silver;
+		}
+
+		.checkbtn {
+			font-size: 30px;
+			color: white;
+			float: right;
+			line-height: 80px;
+			margin-right: 40px;
+			cursor: pointer;
+			display: none;
+		}
+
+		#check {
+			display: none;
+		}
+
+		@media (max-width: 952px){
+			label.logo{
+				font-size: 30px;
+				padding-left: 50px;
+			}
+			nav ul li a{
+				font-size: 16px;
+			}
+		}
+
+		@media (max-width: 858px){
+			.checkbtn{
+			display: block; 
+			}
+			ul {
+				position: fixed;
+				width: 100%;
+				height: 100vh;
+				background: #e6e6e6;
+				top: 80px;
+				left: -100%;
+				text-align: center;
+				transition: all .5s;
+			}
+
+			nav ul li {
+				display: block;
+				margin: 50px 0;
+				line-height: 30px
+			}
+
+			nav ul li a {
+				font-size: 20px;
+			}
+
+			a:hover,a.active {
+				background: none;
+				color: #0082e6;
+
+			}
+
+			#check:checked ~ ul {
+				left: 0;
+			}
+		}
+
+		
+
+
+.learn-btn {color:white; font-size:25px;  background-color: gray; padding:10px 30px; cursor:pointer;}
+
+.learn-btn:hover {background-color: silver;}
+
+.learn-btn2 {color:white; font-size:25px;  background-color: gray; padding:10px 30px; cursor:pointer;}
+
+.learn-btn2:hover {background-color: silver;}
+
+.learn-btn3 {color:white; font-size:25px;  background-color: rgba(0,255,5,0.7); padding:10px 30px; cursor:pointer;}
+
+.learn-btn3:hover {background-color: rgba(0,150,0,1);}
+
+.main {
+	width: 100%;
+	height: 56vh;
+}
+
+.super {
+	background-color: #666666; width: 100%; height: 1225px;
+}
+
+.img {
+	background-image: url(); background-color: orange;
+	width: cover fixed;
+}
+
+		
+	</style>
+
+</head>
+<body>
+
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<li class="fas fa-bars"></li>
+		</label>
+		<label class="logo">kanha</label>
+		<ul>
+			<li><a href="#" class="k">Home</a></li>
+			<li><a href="#" class="k">About</a></li>
+			<li><a href="#" class="k">Services</a></li>
+			<li><a href="#" class="k">Contact</a></li>
+			<li><a href="#" class="k">Feedback</a></li>
+		</ul>
+	</nav>
+
+	<!--using JS -->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<div style="padding-top: 15px;" class="main"><h1 align="center" style="font-size: 70px;">HTML</h1><br>
+		<p style="font-size: 30px; color: black;" align="center">The language for building web pages</p><br><br>
+			<div style="padding-left: 42%;">
+				<a href="">
+					<input type="submit" value="LEARN HTML" class="learn-btn">
+				</a>
+			</div>	<br>
+			<div style="padding-left: 39.3%;">
+				<a href="">
+					<input type="submit" value="HTML REFERENCE" class="learn-btn">
+				</a>
+			</div>	
+	</div>
+	
+		<div style="background-color: #f2f2f2">
+		<div style="padding-top: 15px;" class="main"><h1 align="center" style="font-size: 70px;">CSS</h1><br>
+		<p style="font-size: 30px; color: black;" align="center">The language for styling web pages</p><br><br>
+			<div style="padding-left: 42%;">
+				<a href="">
+					<input type="submit" value="LEARN CSS" class="learn-btn">
+				</a>
+			</div>	<br>
+			<div style="padding-left: 39.3%;">
+				<a href="">
+				<input type="submit" value="CSS REFERENCE" class="learn-btn">
+				</a>
+					
+			</div>	
+	</div>
+</div>
+	
+		<div style="padding-top: 15px;" class="main"><h1 align="center" style="font-size: 70px;">JAVASCRIPT</h1><br>
+		<p style="font-size: 30px; color: black;" align="center">The language for programming wep pages</p><br><br>
+			<div style="padding-left: 39%;">
+				<a href="">
+					<input type="submit" value="LEARN JAVASCRIPT" class="learn-btn">
+				</a>
+			</div>	<br>
+			<div style="padding-left: 36.5%;">
+				<a href="">
+					<input type="submit" value="JAVASCRIPT REFERENCE" class="learn-btn">
+				</a>
+			</div>	
+	</div>
+	
+
+	<div style="background-color: #f2f2f2">
+	<div style="padding-top: 15px;" class="main"><h1 align="center" style="font-size: 70px;">SQL</h1><br>
+		<p style="font-size: 30px; color: black;" align="center">The language for accessing database</p><br><br>
+			<div style="padding-left: 42%;">
+				<a href="">
+					<input type="submit" value="LEARN SQL" class="learn-btn">
+				</a>
+			</div>	<br>
+			<div style="padding-left: 39.2%;">
+				<a href="">
+					<input type="submit" value="SQL REFERENCE" class="learn-btn">
+				</a>
+			</div>	
+	</div>
+	
+</div>
+
+
+<!--new section-->
+
+<div class="super" style="padding-top: 60px;">
+	<div style="width: 95%; height: 250px; margin: 0px auto; background-color: white;padding-top: 15px;">
+		<h1 style="font-size: 50px;" align="center">Python</h1><br>
+		<p align="center" style="font-size: 20px;">A programming language</p><br>
+		<div style="width: 100%; height: 85px; padding-left: 41%;">
+			<a href="#">
+				<input type="submit" value="LEARN Python" class="learn-btn2">
+			</a>
+		</div>
+	</div><br><br>
+
+
+
+
+	<div style="width: 95%; height: 250px; margin: 0px auto; background-color: white; padding-top: 15px;">
+		<h1 style="font-size: 50px;" align="center">PHP</h1><br>
+		<p align="center" style="font-size: 20px;">A web server progrmming language</p><br>
+		<div style="width: 100%; height: 85px; padding-left: 41.9%;">
+			<a href="#">
+				<input type="submit" value="LEARN PHP" class="learn-btn2">
+			</a>
+		</div>
+	</div><br><br>
+
+
+
+
+	<div style="width: 95%; height: 250px; margin: 0px auto; background-color: white; padding-top: 15px;">
+		<h1 style="font-size: 50px;" align="center">JQuery</h1><br>
+		<p align="center" style="font-size: 20px;">A JavaScript library for developing web pages</p><br>
+		<div style=" width: 100%; height: 85px; padding-left: 37%;">
+			<a href="#">
+				<input type="submit" value="LEARN LEARN JQuery" class="learn-btn2">
+			</a>
+		</div>
+	</div><br><br>
+
+
+
+
+	<div style="width: 95%; height: 250px; margin: 0px auto; background-color: white; padding-top: 15px;">
+		<h1 style="font-size: 50px;" align="center">Java</h1><br>
+		<p align="center" style="font-size: 20px;">A programming language</p><br>
+		<div style="width: 100%; height: 85px; padding-left: 41.9%;">
+			<a href="#">
+				<input type="submit" value="LEARN Java" class="learn-btn2">
+			</a>
+		</div>
+	</div><br><br>
+
+	
+</div>
+<div style="width: 100%; height: 1024px; padding-top: 100px;">
+	<h1 style="font-size: 60px; text-align: center;">W3.CSS</h1><br><br>
+	<p align="center" style="font-size: 25px;">A modern CSS framework for faster and better responsive wep pages</p><br><br><br>
+	<div style="padding-left: 40%;">
+	<a href="#">
+		<input type="submit" value="LEARN W3.CSS" class="learn-btn2">
+	</a><br><br><br><br><br>
+
+	<h1 style="font-size: 60px;">W3.CSS</h1><br><br>
+	<div style="padding-right: 50%">
+	<p style="font-size: 25px;">A modern CSS framework for faster and better responsive wep pages</p><br><br><br>
+	</div>
+	<div style="padding-left: 0%;">
+	<a href="#">
+		<input type="submit" value="LEARN W3.CSS" class="learn-btn2">
+	</a><br><br><br><br>
+	
+
+
+</div>
+
+</div>
+
+
+<div style="background-color: #666666; width: 100%; height: 600px; padding-top: 50px;">
+	<h1 style="font-size: 50px; color: white; text-align: center;">Exercise</h1><br>
+	<p align="center" style="font-size: 22px; color: white;">Test yourselt with exercises</p><br><br>
+	<div style="padding-left: 41.4%;">
+	<a href="#">
+		<input type="submit" value="HTML Exercise" class="learn-btn3">
+	</a><br><br><br>
+	<a href="#">
+		<input type="submit" value="CSS Exercise" class="learn-btn3">
+	</a><br><br><br>
+	<a href="#">
+		<input type="submit" value="JavaScript Exercise" class="learn-btn3">
+	</a>
+	<br><br><br>
+	<a href="#">
+		<input type="submit" value="SQLExercise" class="learn-btn3">
+	</a><br><br><br><br>
+
+</div>
+
+
+<div style="width: 100%; height: 500px; background-color: #f2f2f2;"></div>
+
+
+<div style="width: 100%; height: 300px; padding-top: 60px;">
+	<h1 style="font-size: 45px; text-align: center;">How To Section</h1><br>
+	<p align="center" style="font-size: 20px;">Code snippets for HTML, CSS and JavaScript</p><br><br>
+	<div style="padding-left: 41.4%;">
+	<a href="#">
+		<input type="submit" value="LEARN Python" class="learn-btn2">
+	</a>
+</div>
+</div>
+
+                    <!--footer-->
+<div style="width: 100%; height: 330px; padding-top: 50px; " class="img" >
+	<h2 style="font-size: 50px; color: white; text-align: center;">Web Certificate</h2><br>
+	<p align="center" style="font-size: 20px; color: white;">Get Certificate in HTML, CSS, JavaScript</p><br><br>
+	<div style="padding-left: 40%;">
+	<a href="#">
+		<input type="submit" value="LEARN Python" class="learn-btn3">
+	</a>
+</div>
+
+</div>
+</body>
+</html>
